@@ -60,7 +60,7 @@ Resources:
   DB:
     Type: "AWS::RDS::DBInstance"
     Properties:
-      AllocatedStorage: 5
+      AllocatedStorage: "5"
       StorageType: gp2
       DBInstanceClass: !FindInMap [InstanceSize, !Ref EnvironmentSize, DB] # Dynamic mapping + Pseudo Parameter
       DBName: wordpress

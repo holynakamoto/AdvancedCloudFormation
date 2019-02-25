@@ -89,7 +89,7 @@ Resources:
     Condition: isntLarge # added - only create the MySQL DB if its small/med
     DeletionPolicy: Snapshot
     Properties:
-      AllocatedStorage: 5
+      AllocatedStorage: "5"
       DBInstanceClass: !FindInMap [InstanceSize, !Ref EnvironmentSize, DB] # Dynamic mapping + Pseudo Parameter
       DBName: !If [isRestore, !Ref "AWS::NoValue", !Ref DatabaseName]
       Engine: MySQL

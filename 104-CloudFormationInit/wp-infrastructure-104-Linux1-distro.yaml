@@ -135,6 +135,8 @@ Resources:
               php: []
               mysql: []
               php-mysql: []
+              nmap: []
+              mtr: []
           sources:
             /var/www/html: "http://wordpress.org/latest.tar.gz"
           services:
